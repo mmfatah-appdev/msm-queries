@@ -58,3 +58,35 @@
     <%= time_ago_in_words@the_director.updated_at %> ago
   </dd>
 </dl>
+<table border="1">
+<h2>Filmography</h2>
+<% @filmography.each do |a_film|  %>
+<tr>
+  <td>
+    <%= a_film.id %>
+  </td>
+  <td>
+    <%= a_film.image %>
+  </td>
+
+   <td>
+    <%= a_film.title %>
+  </td>
+  <td>
+    <%= a_film.year %>
+  </td>
+  <td>
+    <%= a_film.director_id %>
+  </td>
+
+  <td>
+    <a href="">
+      Show details 
+      </a>
+    
+    </td>
+
+
+</tr>
+<% end %>
+</table>
